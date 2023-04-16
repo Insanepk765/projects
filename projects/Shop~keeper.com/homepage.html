@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <title>SHOP~KEEPER.com</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-info bg-gradient">
+    <div class="container-fluid bg-info bg-gradient">
+      <div class="row">
+        <!-- nav bar with drop down menu under that home and other links -->
+        <nav class="navbar sticky-top bg-black bg-gradient rounded">
+          <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1 text-light sticky-top">
+              <i class="fas fa-shopping-cart">
+               <strong> SHOP~KEEPER </strong><i class="bi bi-bag-heart-fill"></i
+              ></i>
+            </span>
+            <button
+              class="navbar-toggler bg-danger sticky-top"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation bg-warning"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active bg-warning bg-gradient"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link bg-info bg-gradient"
+                    href="D:\priyanshu\bootstrap\projects\Shop~keeper.com\signup.html"
+                    >Edit Profile</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle bg-warning bg-gradient"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Account
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="D:\priyanshu\bootstrap\projects\Shop~keeper.com\logorsig.html"
+                      >
+                        loginto another account</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled bg-info bg-gradient">Disabled</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- search bar -->
+        <nav class="navbar sticky-top bg-body-dark">
+          <div class="container-fluid">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </nav>
+        <div style=" background-color: rgb(250, 242, 8); ">
+          <marquee behavior="alternate" direction="right" scrollamount="13">
+           <strong><big><i> WELCOME TO SHOP~KEEPER.COM</i></big></strong> 
+          </marquee>
+          <marquee behavior="alternate" direction="left" scrollamount="11">
+            <strong><big><i>HAVE FUN AND SHOP AS MUCH YOU CAN</i></big></strong> 
+           </marquee>
+        </div>
+        <!-- carousel -->
+       
+       
+        <style>
+          #root {
+            height: 90%;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        </style>
+        <div id="root">
+          <button type="button" class="btn btn-danger position-relative">
+            <u><i>Ads</i></u>
+            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+              <span class="visually-hidden">New alerts</span>
+            </span>
+          </button>
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="D:\priyanshu\bootstrap\imgs\bike carousle.jpg"
+                  class="d-block w-100"
+                  alt="img1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="D:\priyanshu\bootstrap\imgs\car carousle (1).jpg"
+                  class="d-block w-100"
+                  alt="img2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="D:\priyanshu\bootstrap\imgs\pj carousle.jpg"
+                  class="d-block w-100"
+                  alt="img3"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div><br>
+        <br>
+        <br>
+
+<!-- video card 0 -->
+<button type="button" class="btn btn-danger position-relative">
+  <u><i>Ads</i></u>
+  <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+    <span class="visually-hidden">New alerts</span>
+  </span>
+</button>
+
+
+<div class="card">
+  <div  class="card-body bg-info ">
+  </div>
+  
+  <video controls autoplay muted src="../../videos/ducati.webm"></video>
+</div>
+
+
+        <!-- cards -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="D:\priyanshu\bootstrap\imgs\bikeh5.1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Harley-Davidson</h5>
+                  <p class="card-text">$200thousand dollars.</p>
+                  <a href="D:\priyanshu\bootstrap\projects\Shop~keeper.com\bikes.html" class="btn btn-primary">VIEW MORE</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="D:\priyanshu\bootstrap\imgs\bikeh4.1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pulsar</h5>
+                  <p class="card-text">
+                   $90 thousand dollars.
+                  </p>
+                  <a href="D:\priyanshu\bootstrap\projects\Shop~keeper.com\bikes.html" class="btn btn-primary">VIEW MORE</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="D:\priyanshu\bootstrap\imgs\bikeh1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">F-3</h5>
+                  <p class="card-text">
+                    $50 thousand dollars.
+                  </p>
+                  <a href="D:\priyanshu\bootstrap\projects\Shop~keeper.com\bikes.html" class="btn btn-primary">VIEW MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main>
+          <section>
+            <div class="container">
+              <h2 class="mb-4">New Arrivals</h2>
+              <div class="row">
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img src="../../imgs/jet1.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Alpha-1 jet</h5>
+                      <p class="card-text">$19999 dollars only</p>
+                      <a href="D:\priyanshu\bootstrap\projects\Shop~keeper.com\pricing.html"> <button class="btn btn-primary">Add to Cart <i class="bi bi-cart4"></i></button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img src="../../imgs/lambor1.7.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Lamborgini</h5>
+                      <p class="card-text">$2999 dollars.</p>
+                      <a href="D:\priyanshu\bootstrap\projects\Shop~keeper.com\pricing.html"> <button class="btn btn-primary">Add to Cart <i class="bi bi-cart4"></i></button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <img src="../../imgs/bikeh4.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">F-3 latest model</h5>
+                      <p class="card-text">$159 dollars .</p>
+                      <a href="D:\priyanshu\bootstrap\projects\Shop~keeper.com\pricing.html"> <button class="btn btn-primary">Add to Cart <i class="bi bi-cart4"></i></button></a>
+                    </div>
+                  </div>
+                </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+          <!-- video card 1 -->
+          <button type="button" class="btn btn-danger position-relative">
+            <u><i>Ads</i></u>
+            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+              <span class="visually-hidden">New alerts</span>
+            </span>
+          </button>
+
+          <div class="card">
+            <div  class="card-body bg-info ">
+              
+            </div>
+            
+            <video controls autoplay muted src="../../videos/car1drift.mp4"></video>
+          </div>
+          <!-- featured  -->
+          <section class=" bg-info bg-gradient">
+            <div class="container">
+              <h2 class="mb-4">Featured Products</h2>
+              <div class="row">
+                <div class="col-md-3 mb-4">
+                  <div class="card">
+                    <img src="../../imgs/bike2.3.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">RR</h5>
+                      <p class="card-text">$64.99 thousand.</p>
+                      <a href="D:\priyanshu\bootstrap\projects\Shop~keeper.com\pricing.html"> <button class="btn btn-primary">Add to Cart <i class="bi bi-cart4"></i></button></a>                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="card">
+                    <img src="../../imgs/porche1.2.png" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Porche-Latest</h5>
+                      <p class="card-text">$399 thousand dollars.</p>
+                      <a href="D:\priyanshu\bootstrap\projects\Shop~keeper.com\pricing.html"> <button class="btn btn-primary">Add to Cart <i class="bi bi-cart4"></i></button></a>                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="card">
+                    <img src="../../imgs/pj1.webp" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Alpha-personal</h5>
+                      <p class="card-text">$1499 thousand dollars only.</p>
+                      <a href="D:\priyanshu\bootstrap\projects\Shop~keeper.com\pricing.html"> <button class="btn btn-primary">Add to Cart <i class="bi bi-cart4"></i></button></a>                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                  <div class="card">
+                    <img src="../../imgs/odi1.webp" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Odi-latest</h5>
+                      <p class="card-text">$449 thousand dollars .</p>
+                      <a href="D:\priyanshu\bootstrap\projects\Shop~keeper.com\pricing.html"> <button class="btn btn-primary">Add to Cart <i class="bi bi-cart4"></i></button></a>                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+      
+          <!-- our services  -->
+          <section>
+            <div class="container">
+              <h2 class="mb-4">Our Services</h2>
+              <div class="row">
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Free Shipping</h5>
+                      <p class="card-text">We offer free shipping on all orders over $50!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Easy Returns</h5>
+                      <p class="card-text">Not satisfied with your purchase? No problem! We offer easy returns.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">24/7 Support</h5>
+                      <p class="card-text">Need help? Our support team is available 24/7 to assist you.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class=" bg-info bg-gradient">
+            <div class="container">
+              <h2 class="mb-4">Customer Reviews</h2>
+              <div class="row">
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">John Doe</h5>
+                      <p class="card-text">"I recently purchased a product from this website and I couldn't be happier with my purchase. The quality of the product is outstanding and the customer service is top-notch."</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Jane Smith</h5>
+                      <p class="card-text">"I've been shopping with this website for years and I've never been disappointed. The selection is great and the prices are unbeatable."</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Bob Johnson</h5>
+                      <p class="card-text">"I had an issue with my order and the customer service team was able to resolve it quickly and efficiently. I highly recommend this website."</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- video card 2 -->
+          <button type="button" class="btn btn-danger position-relative">
+            <u><i>Ads</i></u>
+            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+              <span class="visually-hidden">New alerts</span>
+            </span>
+          </button>
+          
+          <div class="card">
+            <div  class="card-body bg-info ">
+              
+            </div>
+            
+            <video controls autoplay muted src="../../videos/jet1.mp4"></video>
+          </div>
+          <!-- contact us  -->
+          <section>
+            <div class="container">
+              <h2 class="mb-4">Contact Us</h2>
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <form>
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email address</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <p>123 Main sowbhagya school</p>
+                  <p>kavalbyrasandra ,rt nagar post </p>
+                  <p>+91-9538509721</p>
+                  <p>info@shopkeeper.com</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <br>
+          <br>
+          <!-- pagination  -->
+          <center><nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <!-- <li class="page-item"><a class="page-link" href="#">Previous</a></li> -->
+              <li class="page-item"><a class="page-link" href="D:\priyanshu\bootstrap\projects\Shop~keeper.com\bikes.html"><i class="bi bi-bicycle"></i>BIKES</a></li>
+              <li class="page-item"><a class="page-link" href="D:\priyanshu\bootstrap\projects\Shop~keeper.com\cars.html"><i class="bi bi-car-front-fill"></i>CARS</a></li>
+              <li class="page-item"><a class="page-link" href="D:\priyanshu\bootstrap\projects\Shop~keeper.com\jet.html"><i class="bi bi-airplane-engines"></i>JET</a></li>
+              <li class="page-item"><a class="page-link" href="D:\priyanshu\bootstrap\projects\Shop~keeper.com\bikes.html">Next</a></li>
+            </ul>
+          </nav></center>
+    <!-- footer -->
+    <div class="container-fluid bg-info bg-gradient"><div class="row"><div class="col">
+    <div class=" bg-info bg-gradient"></div>
+      <div class="b-example-divider  bg-info bg-gradient"></div>
+
+      <div class="container ">
+        <footer class="py-5">
+          <div class="row">
+            <!-- <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Home</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Features</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-muted">About</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden"
+                    >Email address</label
+                  >
+                  <input
+                    id="newsletter1"
+                    type="text"
+                    class="form-control"
+                    placeholder="Email address"
+                  />
+                  <button class="btn btn-primary" type="button">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div> -->
+
+              <div
+            class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+          > 
+            <p>&copy; 2023 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3">
+                <a class="link-dark" href="#">
+                  <!-- instagram link -->
+                  <i class="bi bi-instagram"></i
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a class="link-dark" href="https://twitter.com/punithpk765?t=UOKAA3GP2L8jP6im1Vc4sQ&s=08">
+                  <!-- twitter link -->
+                  <i class="bi bi-twitter"></i>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a class="link-dark" href="#">
+                  <!-- gmail link -->
+                  <i class="bi bi-envelope-at-fill"></i>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a class="link-dark" href="https://youtube.com/@nation_called_imagination">
+                  <!-- youtube link -->
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a class="link-dark" href="#">
+                  <!-- telegram link -->
+                  <i class="bi bi-telegram"></i>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a class="link-dark" href="https://www.facebook.com/punitkumar.kumar.1213?mibextid=ZbWKwL">
+                  <!-- facebook link -->
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div></div></div></div>
+   
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
