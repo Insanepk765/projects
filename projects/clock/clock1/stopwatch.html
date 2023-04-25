@@ -100,7 +100,8 @@
      timeRef= setInterval(() => {
         millsec++;
         let show = document.getElementById("root1");
-        show.innerHTML = `Minute : ${minute}   Second : ${sec}  Millisecond : ${millsec}`;
+        show.innerHTML = `Minute :   Second :  Millisecond 
+                          ${minute} :  ${sec} : ${millsec}` ;
         if(millsec==170){
           millsec=0;
           sec++;
