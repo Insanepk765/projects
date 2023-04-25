@@ -15,7 +15,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="background-color: black">
+ <body style="background-color: black">
     <div class="block glow">
       <center>
         
@@ -23,6 +23,9 @@
        
       
         <h1 id="root1" style="color: #ff3300;"></h1>
+        <button id="btn"  style="background-color: #03d256;">start</button>
+        <button id="btn1" style="background-color: #ff3300;">stop</button>
+     
       </center>
     </div>
     <style>
@@ -89,12 +92,16 @@
       let millsec = 0;
       let sec=0;
       let minute = 0;
+      let timeRef;
       // let hour = 0;
-      setInterval(() => {
+      const btn=document.getElementById("btn");
+      const stopInterval=document.getElementById("btn1");
+      const showtheTime =()=>{
+     timeRef= setInterval(() => {
         millsec++;
         let show = document.getElementById("root1");
         show.innerHTML = `Minute:${minute}  Second:${sec} Millisecond:${millsec}`;
-        if(millsec==200){
+        if(millsec==160){
           millsec=0;
           sec++;
         }
@@ -107,7 +114,12 @@
           hour++;
         }
        
+      });};
+      btn.addEventListener('click',showtheTime);
+      stopInterval.addEventListener('click',()=>{
+        clearInterval(timeRef);
       });
+     
     </script>
 
     <script
