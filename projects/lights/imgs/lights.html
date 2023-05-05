@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: black">
+    <div>
+      <h1 style="color: gold">
+        <i><center>CAN YOU PLEASE TURN ON THE LIGHTS FOR ME?????</center></i>
+      </h1>
+      <center>
+        <button
+          onclick="document.getElementById('image').src='./lighton.png'"
+          style="background-color: yellow; width: 300px; height: 40px"
+          ;
+        >
+          <strong><big>TURN ON</big></strong>
+        </button>
+
+        <img
+          src="./lightoff.png"
+          alt="lightsoff"
+          id="image"
+          style="width: 512px"
+        />
+
+        <button
+          onclick="document.getElementById('image').src='./lightoff.png'"
+          style="background-color: yellow; width: 300px; height: 40px"
+          ;
+        >
+          <strong><big>TURN OFF</big></strong>
+        </button>
+      </center>
+    </div>
+  </body>
+</html>
