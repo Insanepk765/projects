@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <title>temperature converter</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="background-color: yellow">
+    <style>
+      #bod {
+        width: 800px;
+        height: 300px;
+        background-color: rgb(238, 95, 95);
+        margin-top: 100px;
+      }
+    </style>
+    <center>
+      <h1 style="color: rgb(124, 2, 124); margin-top: 30px">
+        <strong><i>PUNIT KUMAR'S Temperature converter.</i></strong>
+      </h1>
+      <div id="bod">
+        <form id="tempCalc" onsubmit="calculateTemp(); return false">
+          <label for="temp"
+            ><strong
+              ><i style="font-size: 30px; color: #09013a">
+                Please enter the temperature you would like to convert....</i
+              ></strong
+            ></label
+          ><br /><br />
+          <input type="number" name="temp" id="temp" />
+
+          <select name="temp_diff" id="temp_diff">
+            <option value="cel">°Celsius</option>
+            <option value="fah">°Fahrenheit</option></select
+          ><br /><br />
+          <input
+            type="submit"
+            name="temp"
+            style="background-color: rgb(2, 250, 250)"
+          />
+          <strong
+            ><i><span id="resultContainer"> </span></i
+          ></strong>
+        </form>
+      </div>
+    </center>
+
+    <script>
+      const calculateTemp = () => {
+        const numberTemp = document.getElementById("temp").value;
+        const tempSelected = document.getElementById("temp_diff");
+        const valueTemp = temp_diff.options[tempSelected.selectedIndex].value;
+
+        const celToFah = (cel) => {
+          let fahrenheit = Math.round((cel * 9) / 5 + 32);
+          return fahrenheit;
+        };
+        const fehToCel = (fehr) => {
+          let celsius = Math.round(((fehr - 32) * 5) / 9);
+          return celsius;
+        };
+
+        let result;
+
+        if (valueTemp == "cel") {
+          result = celToFah(numberTemp);
+          document.getElementById(
+            "resultContainer"
+          ).innerHTML = ` = ${result}°Fahrenheit`;
+        } else {
+          result = fehToCel(numberTemp);
+          document.getElementById(
+            "resultContainer"
+          ).innerHTML = ` = ${result}°Celsius`;
+        }
+      };
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
